@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Flashcards</title>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.min.css">
+</head>
+<body>
+    <header>
+        <h1>Flashcards</h1>
+        {% include "cards/navigation.html" %}
+    </header>
+    <main>
+        {% block content %}
+            <h2>Welcome to our Flashcards app!</h2>
+        {% endblock content %}
+    </main>
+</body>
+<style>
+    /* Custom CSS */
+
+    :root {
+        --accent: #834333;
+        --accent-bg: BlanchedAlmond;
+        --bg: #D2B48C;
+        --text: #800000;
+        --text-light: #585858;
+        --border: #d8dae1;
+        --code: #d81b60;
+        --preformatted: #444;
+    }
+
+    article {
+        background-color: BurlyWood;
+        border-radius: 5px;
+        padding: 1em;
+        margin: 1em 0;
+    }
+
+    h2 {
+        text-align: center;
+    }
+
+    h2, h4 {
+        margin-top: 0;
+    }
+
+    hr {
+        background: BurlyWood;
+        border-color: var(--accent);
+    }
+
+    button,
+    a[role="button"] {
+        color: #D2B48C;
+        background-color: #834333;
+        text-decoration: none;
+    }
+
+    input, select, textarea {
+        width: 100%;
+    }
+</style>
+
+</html>
